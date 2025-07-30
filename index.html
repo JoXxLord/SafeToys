@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Logo.png">
+    <title>S.T: Inicio</title>
+    <link rel="stylesheet" href="Coe.css">
+    <script defer src="Coe.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Logo.png" alt="Clínica Dental" class="logo">
+            <div class="header-text">
+                <h1>Safe Toys</h1>
+                <p>Por juguetes saludables, ecológicos y de calidad</p>
+            </div>
+        </div>
+<nav>
+    <ul>
+        <li>
+            <div class="nav-social-icons">
+                <a href="https://www.instagram.com/safetoys_campaign?igsh=MWUwbGFsOTNpeGw2dQ==" target="_blank">
+                    <img src="IG png.png" alt="Instagram">
+                </a>
+            </div>
+        </li>
+        <li><a href="SB.html">Nuestra Propuesta</a></li>
+        <li><a href="tratamientos.html">Las Razones</a></li>
+    </ul>
+</nav>
+
+<button class="hamburger" id="hamburger">&#9776;</button>
+
+<nav class="nav-links" id="nav-links">
+    <a href="SB.html">Argumentos</a>
+    <a href="tratamientos.html">Propuesta</a>
+  </nav>
+</nav>
+    </header>
+ <div class="main-content">
+    <section id="carrusel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="Belleza en tu sonrisa a tu alcance.png" alt="Imagen 1">
+            </div>
+        </div>
+    </section>
+
+    <section id="whatsapp-section">
+        <a href="tratamientos.html" class="whatsapp-container">
+            <img src="wsp2-1.png" alt="" class="">
+            <div class="whatsapp-text">
+                <h3>¿Buscas apoyar nuestra causa?</h3>
+                <h2>¡Primero debes informarte!</h2> 
+                <p>Haz click aquí para ver en que nos apoyamos</p>
+            </div>
+            <div class="whatsapp-icons">
+                <img src="wsp1-1.png" alt="">
+            </div>
+        </a>
+    </section>
+        <a href="https://wa.me/5492804606918" target="_blank" id="whatsapp-btn">
+            <img src="WhatsappLoguito.png" alt="WhatsApp">
+            <span id="whatsapp-number">+54 9 280 460-6918</span>
+        </a>
+</div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="contacts">
+                    <h3>Contacto</h3>
+                    <p>Teléfono: +54 261 001-9301</p>
+                    <p>Email: safetoyscampaign@gmail.com</p>
+                </div>
+                <div class="about-us">
+                    <h3>Sobre Nosotros</h3>
+                    <a href="">Trabaja con Nosotros</a>
+                    <a href="">Más información</a>
+                </div>
+            </div>
+    
+            <div class="footer-logo">
+                <img src="Logo.png" alt="Logo Clínica">
+                <h1>Safe Toys</h1>
+                <p>Campaña por la producción segura de juguetes</p>
+            </div>
+    
+            <p class="footer-copyright">&copy; 2025 STC & JL </p>
+        </div>
+
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+          
+            hamburger.addEventListener('click', () => {
+              navLinks.classList.toggle('active');
+            });
+          </script>
+    </footer>

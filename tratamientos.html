@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Logo.png">
+    <title>S.T: Fundamentos </title>
+    <link rel="stylesheet" href="tratamientos.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Logo.png" alt="Clínica Dental" class="logo">
+            <div class="header-text">
+                <h1>Safe Toys</h1>
+                <p>Por juguetes saludables, ecológicos y de calidad</p>
+            </div>
+        </div>
+<nav>
+    <ul>
+        <li>
+            <div class="nav-social-icons">
+                <a href="https://www.instagram.com/safetoys_campaign?igsh=MWUwbGFsOTNpeGw2dQ==" target="_blank">
+                    <img src="IG png.png" alt="Instagram">
+                </a>
+            </div>
+        </li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="SB.html">Nuestra Propuesta</a></li>
+    </ul>
+</nav>
+<button class="hamburger" id="hamburger">&#9776;</button>
+
+<nav class="nav-links" id="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="SB.html">Nuestra Propuesta</a>
+  </nav>
+</nav>
+    </header>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.icono-link').forEach(icon => {
+        icon.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const targetElement = document.getElementById(targetId);
+            const offset = -100; 
+            if (targetElement) {
+                const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({ top: elementPosition + offset, behavior: 'smooth' });
+            }
+        });
+    });
+});
+    </script>
+    
+    <main class="tratamientos-container">
+        <div id="estetica" class="tratamiento derecha">
+            <img src="Ola 3.png" alt="Implantes Dentales">
+            <div class="info">
+                <h3>Calidad en decadencia</h3>
+                <p>-Los juguetes de cadenas como McDonald’s, Burger King o KFC han perdido calidad con el tiempo, pasando de ser educativos o mecánicos a simples figuras plásticas desechables. Esto los convierte en residuos de un solo uso y reduce su valor como entretenimiento o herramienta de aprendizaje.
+ Segun un estudio del Centro Internacional de Evaluación Ambiental hecho en 2021, El 94% se desecha en menos de una semana. </p>
+            </div>
+        </div>
+    
+        <div id="cirugia" class="tratamiento izquierda">
+            <img src="Ola 2.png" alt="Cirugía">
+            <div class="info">
+                <h3>Materiales tóxicos</h3>
+                <p>-Estudios del American Academy of Pediatrics, han demostrado que los juguetes de comida rápida pueden contener sustancias dañinas como ftalatos, tintas dañinas o plomo, peligrosas para la salud infantil. En 2018, se hallaron niveles de plomo elevados en algunos de estos productos. A su vez, el uso de plásticos baratos y tintas tóxicas puede afectar el sistema endocrino de los niños.</p>
+            </div>
+        </div>
+    
+        <div id="ortodoncia" class="tratamiento derecha">
+            <img src="Ola 5.png" alt="Ortodoncia">
+            <div class="info">
+                <h3>Producción en condiciones insalubres    </h3>
+                <p>-Muchos de estos juguetes se fabrican en fábricas tercerizadas de Asia, con condiciones laborales precarias: higiene deficiente, sueldos menores a 1 dólar por hora, jornadas extensas y posibles casos de trabajo infantil. Respaldado por investigadores del China Labor Watch, se advierte sobre como las cadenas no garantizan producción ética.</p>
+            </div>
+        </div>
+    
+        <div id="implantes" class="tratamiento izquierda">
+            <img src="Ola.png" alt="Implantes Dentales">
+            <div class="info">
+                <h3>Externalidades negativas</h3>
+                <p>-Estos juguetes generan múltiples impactos: El medioambiente se ve contaminado por el plástico y las emisiones por transporte, también, socialmente fomenta el consumo de comida rápida en niños. también exponen químicos peligrosos para la salud. Y afectan la economía con explotación laboral en países sin regulaciones.</p>
+            </div>
+        </div>
+    
+        <div id="protesis" class="tratamiento derecha">
+            <img src="Ola 4.png" alt="Prótesis">
+            <div class="info">
+                <h3>El intento fallido de mc donalds</h3>
+                <p>-Aunque en algunas regiones reemplazaron los juguetes por libros o peluches, estos siguen siendo productos efímeros, fabricados con materiales contaminantes y sin garantías éticas. El cambio no resuelve la lógica de consumo y descarte que la marca perpetúa. "Cambiar el objeto no cambia el problema" declararon investigadores de Eco Watch</p>
+            </div>
+        </div>
+    
+    </main>
+    <a href="" target="_blank" id="whatsapp-btn">
+        <img src="WhatsappLoguito.png" alt="WhatsApp">
+        <span id="whatsapp-number">+54 261 001-9301</span>
+    </a>
+</div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="contacts">
+                    <h3>Contacto</h3>
+                    <p>Teléfono: +54 261 001-9301</p>
+                    <p>Email: safetoyscampaign@gmail.com</p>
+                </div>
+                <div class="about-us">
+                    <h3>Sobre Nosotros</h3>
+                    <a href="">Trabaja con Nosotros</a>
+                    <a href="">Más información</a>
+                </div>
+            </div>
+    
+            <div class="footer-logo">
+                <img src="Logo.png" alt="Logo">
+                <h1>Safe Toys</h1>
+                <p>Campaña por la producción segura de juguetes</p>
+            </div>
+    
+            <p class="footer-copyright">&copy; Valentina Robles | Joaquín Cortés | Thiago Minich - 5°5ta </p>
+        </div>
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+          
+            hamburger.addEventListener('click', () => {
+              navLinks.classList.toggle('active');
+            });
+          </script>
+    </footer>
